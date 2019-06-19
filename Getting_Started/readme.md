@@ -61,3 +61,34 @@
 
    run the app:
      $ DEBUG=myappgen:* npm start</pre>
+
+### Basic routing
+
+- **Routing** refers to determining how an application responds to a client request to a particular endpoint, which is a URI (or path) and a specific HTTP request method (GET, POST, and so on).
+- Each route can have one or more handler functions, which are executed when the route is matched. Route definition takes the following structure:<br>
+    <pre>
+    app.METHOD(PATH, HANDLER)</pre>
+- Where:
+    - app is an instance of express.
+    - METHOD is an [HTTP request method](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods), in lowercase.
+    - PATH is a path on the server.
+    - HANDLER is the function executed when the route is matched.
+
+### Static Files
+
+- To serve static files such as images, CSS files, and JavaScript files, use the express.static built-in middleware function in Express.
+- The function signature is:<br>
+    <pre>
+    express.static(root, [options])</pre>
+- The root argument specifies the root directory from which to serve static assets.
+- For example, use the following code to serve images, CSS files, and JavaScript files in a directory named public:<br>
+    <pre>
+    app.use(express.static('public'))</pre>
+- To use multiple static assets directories, call the express.static middleware function multiple times.<br>
+    <pre>
+    app.use(express.static('public'))
+    app.use(express.static('files'))</pre>
+- Express looks up the files in the order in which you set the static directories with the express.static middleware function.
+- However, the path that you provide to the express.static function is relative to the directory from where you launch your node process. If you run the express app from another directory, it’s safer to use the absolute path of the directory that you want to serve:<br>
+    <pre>
+    app.use('/static', express.static(path.join(__dirname, 'public')))</pre>
