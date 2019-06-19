@@ -41,4 +41,23 @@
 
 ### Express generator
 
-- 
+- Use the application generator tool, express-generator, to quickly create an application skeleton.
+- The express-generator package installs the express command-line tool. Use the following command to do so:<br>
+    <pre>
+    $ npm install express-generator -g</pre>
+- Display the command options with the -h option:<br>
+    <pre>
+    $ express -h</pre>
+- To create Express app using genrator give the following comand:<br>
+    <pre>
+    $ express --view=pug myappgen</pre>
+- Then install dependencies and run the app:<br>
+    <pre>
+    change directory:
+     $ cd myappgen
+
+   install dependencies:
+     $ npm install
+
+   run the app:
+     $ DEBUG=myappgen:* npm start</pre>
