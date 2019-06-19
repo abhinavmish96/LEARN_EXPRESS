@@ -25,7 +25,20 @@
 - This command prompts you for a number of things, such as the name and version of your application. For now, you can simply hit RETURN to accept the defaults for most of them, with the following exception:<br>
     <pre>
     entry point: (index.js)</pre>
-Enter app.js, or whatever you want the name of the main file to be. If you want it to be index.js, hit RETURN to accept the suggested default file name.
+- Enter app.js, or whatever you want the name of the main file to be. If you want it to be index.js, hit RETURN to accept the suggested default file name.
 - Now install Express in the myapp directory and save it in the dependencies list. For example:<br>
     <pre>
     $ npm install express --save</pre>
+
+### Hello World
+
+- In the myapp directory, create a file named app.js.
+- Go to file in app.js in myapp directory.
+- Run the app with the following command:<br>
+    <pre>
+    $ node app.js</pre>
+- Then, load http://localhost:3000/ in a browser to see the output.
+
+### Express generator
+
+- 
