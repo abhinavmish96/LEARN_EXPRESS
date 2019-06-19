@@ -20,4 +20,12 @@
     <pre>
     $ npm init</pre>
 - This command prompts you for a number of things, such as the name and version of your application. For now, you can simply hit RETURN to accept the defaults for most of them, with the following exception:<br>
-    <pre><span style="background-color:black; text-color:green;">entry point: (index.js)</span></pre>
+    <pre>
+    entry point: (index.js)</pre>
+- This command prompts you for a number of things, such as the name and version of your application. For now, you can simply hit RETURN to accept the defaults for most of them, with the following exception:<br>
+    <pre>
+    entry point: (index.js)</pre>
+Enter app.js, or whatever you want the name of the main file to be. If you want it to be index.js, hit RETURN to accept the suggested default file name.
+- Now install Express in the myapp directory and save it in the dependencies list. For example:<br>
+    <pre>
+    $ npm install express --save</pre>
