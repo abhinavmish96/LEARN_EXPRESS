@@ -15,5 +15,4 @@
 - Assuming [Node.js](https://nodejs.org) is already installed , create a directory to hold your application, and make that your working directory.<br>
     <pre>
     $ mkdir myapp
-    $ cd myapp
-    </pre>
+    $ cd myapp</pre>
